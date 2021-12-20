@@ -1,0 +1,13 @@
+encapsulation
+The core idea in object-oriented programming is to divide programs into smaller pieces
+make each piece responsible for managing its own state. This way, some knowledge about
+the way piece of the program works can be kept to that piece. Someone working on the 
+rest of the program does not have to remember  or even be aware of that knowledge. When
+ever these local details change, only the code directly around it needs to be updated.
+
+interfaces
+limited sets of functions or bindings that provide useful functionality at a more
+abstract level, hiding their precise implementation
+
+prototypes
+another object that is used as a fallback source of properties
