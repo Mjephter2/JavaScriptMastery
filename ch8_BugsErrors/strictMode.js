@@ -1,3 +1,8 @@
+/**
+ * code sample from 'Eloquent Javascript' by Marijn Haverbeke
+ *      3rd Edition
+ *      page 131
+ */
 "use strict";
 function Person(name){
     this.name = name;

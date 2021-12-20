@@ -1,3 +1,10 @@
+// user may not provide desirable inputs
+// we must therefore deal with those inputs by using exceptions
+/**
+ * code sample from 'Eloquent Javascript' by Marijn Haverbeke
+ *      3rd Edition
+ *      page 135-136
+ */
 function promptDirection(question){
     let result = prompt(question);
     if(result.toLowerCase() == "left") return "L";
