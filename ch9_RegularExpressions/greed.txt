@@ -1,0 +1,4 @@
+The repetition operators {+, *, ?, {}} are called greedy, meaning they match as much as they
+and backtrack from there. By placing a question mark before them {+?, *?, ??, {}?}, they become 
+ungreedy and start by matching as little as possible, matching more only when the remaining pattern
+does not fit the smaller match.
