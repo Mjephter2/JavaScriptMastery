@@ -1,0 +1,7 @@
+A Module is a  piece of programs that specifies which other pieces it relies on and which functionality
+it provides to other mocules to use (i.e. interface)
+Relations between modules aere called dependencies
+
+A package is a chunk of code that can be distributed (copied and installed). It may contain
+one or more modules and has information about which other packages it depends on. Also, it comes
+with documentation.
