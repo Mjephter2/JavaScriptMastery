@@ -1,0 +1,7 @@
+HTML, which stands for Hypertext Markup Language, is the document format used for web pages. 
+An HTML document contains text, as well as tags that give structure to the text, describing things such as 
+links, paragraphs, and headings.
+The <script> tag allows us to include Javascript code in a document.
+Including large programs directly in HTML documents is often impractical. The <script> tag can be given an 
+src attribute to fetch a script file (a text file containing a JavaScript program) from a URL.
+(Ref. 'Eloquent Javascript' by Marijn Haverbeke 3rd Edition page 221-224)

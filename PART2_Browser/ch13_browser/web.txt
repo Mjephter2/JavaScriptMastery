@@ -1,0 +1,10 @@
+The World Wide Web (not to be confused with the Internet as a whole) is a set of protocols and formats that 
+allow us to visit web pages in a browser. The “Web” part in the name refers to the fact that such pages can 
+easily link to each other, thus connecting into a huge mesh that users can move through.
+To become part of the Web, all you need to do is connect a machine to the Internet and have it listen on port 
+80 with the HTTP protocol so that other computers can ask it for documents.
+Machines connected to the Internet get an IP address, which is a number that can be used to send messages to 
+that machine, and looks something like 149.210.142.219 or 2001:4860:4860::8888. But lists of more or less 
+random numbers are hard to remember and awkward to type, so you can instead register a domain name for a 
+specific address or set of addresses. 
+(Ref. 'Eloquent Javascript' by Marijn Haverbeke 3rd Edition page 221)
