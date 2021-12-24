@@ -1,0 +1,11 @@
+Think of an HTML document as a nested set of boxes. Tags enclose other tags, which in turn contain other tags 
+or text. The data structure the browser uses to represent the document follows this shape. For each box, there 
+is an object, which we can interact with to find out things such as what HTML tag it represents and which boxes 
+and text it contains. This representation is called the Document Object Model, or DOM for short.
+The global binding document gives us access to these objects. Its documentElement property refers to the object 
+representing the <html> tag. Since every HTML 'document' has a head and a body, it also has head and body properties, 
+pointing at those elements.
+Each DOM node object has a nodeType property, which contains a code (number) that identifies the type of node. 
+Elements have code 1, which is also defined as the constant property Node.ELEMENT_NODE. Text nodes, representing 
+a section of text in the document, get code 3 (Node.TEXT_NODE). Comments have code 8 (Node.COMMENT_NODE).
+(Ref. 'Eloquent Javascript' by Marijn Haverbeke 3rd Edition page 228-229)

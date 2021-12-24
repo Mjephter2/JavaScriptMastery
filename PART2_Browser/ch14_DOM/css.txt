@@ -1,0 +1,8 @@
+The styling system for HTML is called CSS, for Cascading Style Sheets. 
+A style sheet is a set of rules for how to style elements in a document. 
+ It can be given inside a <style> tag.
+ The cascading in the name refers to the fact that multiple such rules 
+ are combined to produce the final style for an element.
+ A rule for .abc applies to all elements with "abc" in their class attribute. 
+ A rule for '#xyz' applies to the element with an id attribute of "xyz" 
+ (which should be unique within the document).
