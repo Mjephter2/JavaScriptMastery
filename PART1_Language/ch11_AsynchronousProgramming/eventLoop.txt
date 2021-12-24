@@ -1,0 +1,6 @@
+No matter how closely together events—such as timeouts or incoming requests—happen, a JavaScript
+environment will run only one program at a time. You can think of this as it running a big loop 
+around your program, called the event loop. When there's nothing to be done, that loop is stopped. 
+But as events come in, they are added to a queue, and their code is executed one after the other. 
+Because no two things run at the same time, slow-running code might delay the handling of other events.
+Ref. 'Eloquent Javascript' by Marijn Haverbeke 3rd Edition page 196-197
