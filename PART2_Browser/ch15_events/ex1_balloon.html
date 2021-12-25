@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+</head>
+<body>
+    <p style="text-align: center; margin: 0;">🎈</p>
+    <script>
+        let balloonP = document.querySelector("p");
+        let balloonSize = 200;
+        balloonP.style.fontSize = `${balloonSize}px`;
+
+        const handleUpDownArrow = (event) => {
+            if(event.key == "ArrowUp"){
+                if(balloonSize > 1000){
+                    console.log("Explosion Imminent!");
+                    balloonP.textContent = "💥";
+                    document.body.removeEventListener("keydown", handleUpDownArrow);
+                }else{
+                    balloonSize = balloonSize * 1.1;
+                    balloonP.style.fontSize = `${balloonSize}px`;
+                    console.log(balloonP.style.fontSize);
+                    event.preventDefault();
+                }
+            }else if(event.key == "ArrowDown"){
+                balloonSize = balloonSize * 0.9;
+                balloonP.style.fontSize = `${balloonSize}px`;
+                console.log(balloonP.style.fontSize);
+                event.preventDefault();
+            }
+        }
+        document.body.addEventListener("keydown", handleUpDownArrow);
+    </script>
+</body>
+</html>

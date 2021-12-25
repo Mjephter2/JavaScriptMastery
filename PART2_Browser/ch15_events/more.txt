@@ -1,0 +1,4 @@
+Ref 'Eloquent Javascript' by Marijn Haverbeke 3rd Edition page 256-259
+scroll events
+focus events
+load events
