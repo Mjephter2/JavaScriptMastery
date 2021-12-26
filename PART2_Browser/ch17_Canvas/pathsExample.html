@@ -1,0 +1,32 @@
+<!-- code from 'Eloquent Javascript' by Marijn Haverbeke 3rd Edition page 290-291 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paths</title>
+</head>
+<body>
+    <canvas></canvas>
+    <!-- <script>
+        // This example draws a series of lines
+        let cx = document.querySelector("canvas").getContext("2d");
+        cx.beginPath();
+        for (let y = 10; y < 100; y += 10) {
+            cx.moveTo(10, y);
+            cx.lineTo(90, y);
+        }
+        cx.stroke();
+    </script> -->
+    <script>
+        // This example draws a filled triangle
+        let cx = document.querySelector("canvas").getContext("2d");
+        cx.beginPath();
+        cx.moveTo(50, 10);
+        cx.lineTo(10, 70);
+        cx.lineTo(90, 70);
+        cx.fill();
+      </script>
+</body>
+</html>

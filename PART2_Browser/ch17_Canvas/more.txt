@@ -1,0 +1,9 @@
+* skipped *
+    Drawing a Pie Chart
+    Text
+    Images
+    Transformation
+    Storing and Cleaning Transformations
+    Choosing a Graphics Interface
+    Exercises
+'Eloquent Javascript' by Marijn Haverbeke 3rd Edition page 294-306
