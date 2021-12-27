@@ -1,0 +1,39 @@
+<!-- Sample code from 'Eloquent Javascript' by Marijn Haverbeke 3rd Edition page 322-323 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Fields</title>
+</head>
+<body>
+    <textarea></textarea>
+    <br>
+    <input type="text"> length: <span id="length">0</span>
+    <script>
+        let textarea = document.querySelector("textarea");
+        textarea.addEventListener("keydown", event => {
+          // The key code for F2 happens to be 113
+          if (event.keyCode == 113) {
+            replaceSelection(textarea, "Khasekhemwy");
+            event.preventDefault();
+          }
+        });
+        function replaceSelection(field, word) {
+          let from = field.selectionStart, to = field.selectionEnd;
+          field.value = field.value.slice(0, from) + word +
+                        field.value.slice(to);
+          // Put the cursor after the word
+          field.selectionStart = from + word.length;
+          field.selectionEnd = from + word.length;
+        }
+
+        let text = document.querySelector("input");
+        let output = document.querySelector("#length");
+        text.addEventListener("input", () => {
+            output.textContent = text.value.length;
+        });
+      </script>
+</body>
+</html>

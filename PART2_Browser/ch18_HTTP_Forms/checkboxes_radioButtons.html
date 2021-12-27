@@ -1,0 +1,30 @@
+<!-- Sample code from 'Eloquent Javascript' by Marijn Haverbeke 3rd Edition page 323-324 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkboxees and Radio Buttons</title>
+</head>
+<body>
+    Color:
+    <label>
+        <input type="radio" name="color" value="orange"> Orange
+    </label>
+    <label>
+        <input type="radio" name="color" value="lightgreen"> Green
+    </label>
+    <label>
+        <input type="radio" name="color" value="lightblue"> Blue
+    </label>
+    <script>
+        let buttons = document.querySelectorAll("[name=color]");
+        for (let button of Array.from(buttons)) {
+          button.addEventListener("change", () => {
+            document.body.style.background = button.value;
+          });
+        }
+      </script>
+</body>
+</html>

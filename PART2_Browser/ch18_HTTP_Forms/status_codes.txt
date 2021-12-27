@@ -1,0 +1,6 @@
+Status codes starting with a 2 indicate that the request succeeded. 
+Codes starting with 4 mean there was something wrong with the request. 
+404 is probably the most famous HTTP status code—it means that the 
+resource could not be found. Codes that start with 5 mean an error 
+happened on the server and the request is not to blame.
+'Eloquent Javascript' by Marijn Haverbeke 3rd Edition page 312
