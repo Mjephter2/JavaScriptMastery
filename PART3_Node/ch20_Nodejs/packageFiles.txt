@@ -1,0 +1,27 @@
+It is recommended to create a package.json file for each project, either manually or by running npm init. 
+It contains some information about the project, such as its name and version, and lists its dependencies.
+A packahe.json file look like this
+{
+    "author": "Author Name",
+    "name": "project name",
+    "description": "project description",
+    "version": "1.0.0",
+    "main": "run.js",
+    "dependencies": {
+      "dijkstrajs": "^1.0.1",
+      "random-item": "^1.0.0"
+    },
+    "license": "ISC"
+  }
+When you run npm install without naming a package to install, NPM will install the dependencies listed in 
+package.json. When you install a specific package that is not already listed as a dependency, NPM will add 
+it to package.json.
+
+Versions ( page 357-358 )
+A package.json file lists both the program's own version and versions for its dependencies. Versions are a 
+way to deal with the fact that packages evolve separately, and code written to work with a package as it 
+existed at one point may not work with a later, modified version of the package.
+A caret character (^) in front of the version number for a dependency in package.json indicates that any 
+version compatible with the given number may be installed. So, for example, "^2.3.0" would mean that any 
+version greater than or equal to 2.3.0 and less than 3.0.0 is allowed.
+Ref 'Eloquent Javascript' by Marijn Haverbeke 3rd Edition page 357
