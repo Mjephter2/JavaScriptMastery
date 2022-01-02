@@ -1,0 +1,1 @@
+A router is a component that helps dispatch a request to the function that can handle it.
