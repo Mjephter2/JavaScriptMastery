@@ -6,7 +6,7 @@ console.log(new Date(2009, 11, 21, 10, 59, 10, 950).toString());
 
 // annoyingly 
 // month numbers start from 0
-// day numbers start start at 1
+// day numbers start at 1
 
 // .getTime() returns the timestamp (number of ms) since 1970
 console.log(new Date().getTime());
